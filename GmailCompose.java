@@ -15,12 +15,12 @@ public static void main(String[] args) {
 	Actions actions = new Actions(driver);
 	
 	//login to gmail
-	driver.findElement(By.name("identifier")).sendKeys("priti3800@gmail.com");
+	driver.findElement(By.name("identifier")).sendKeys("priti380@gmail.com");
 	WebElement email = driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/div/button/div[1]"));
 	actions.moveToElement(email).click().build().perform();
 	
 	
-	driver.findElement(By.name("password")).sendKeys("9833131711");
+	driver.findElement(By.name("password")).sendKeys("983313");
 	WebElement password = driver.findElement(By.xpath("//*[@id=\"passwordNext\"]/div/button/div[2]"));
 	actions.moveToElement(password).click().build().perform();
 	
